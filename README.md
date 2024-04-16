@@ -6,7 +6,7 @@ Introduction
 
 The purpose of this Challenge is to build a model from historical lending activity that can identify the creditworthiness of borrowers. 
 
-The historical data of lending activity included loan_size, interest_rate, borrower_income, debt_to_income, num_of_accounts, derogatory_marks, total_debt, and loan_status. The loan status was recorded as 0 for a healthy loan and 1 for an unhealthy load. The object is to process the other features to predict whether a loan will turn out to be a healthy or problem loan.
+The historical data of lending activity included loan_size, interest_rate, borrower_income, debt_to_income, num_of_accounts, derogatory_marks, total_debt, and loan_status. The loan status was recorded as 0 for a healthy loan and 1 for an unhealthy load. The object is to process the other features to predict whether a loan will be healthy or a problem.
 
 LogisticRegression Model.
 
@@ -18,7 +18,6 @@ Results
 
 Classification Report
 
-Classification Report:
               precision    recall  f1-score   support
 
            0       1.00      1.00      1.00     15001
@@ -39,15 +38,23 @@ For class 0, the recall is 1.00, implying that the model identified all healthy 
 
 For class 1, the recall is 0.91, indicating that the model correctly identified 91% of all actual problem loans.
 
-F1-Score: The weighted average of Precision and Recall. This score takes both false positives and false negatives into account. It is a good measure of the accuracy of the classifier when the classes are imbalanced.
+F1-Score: The weighted average of Precision and Recall. This score takes both false positives and false negatives into account. 
 
 For class 0, the F1-score is 1.00, showing excellent model performance for healthy loans.
 
-The F1-score for class 1 is 0.88, indicating good performance, but there is room for improvement, especially compared to healthy loan performance.
+The F1-score for class 1 is 0.88, indicating good performance, but there is room for improvement compared to healthy loan performance.
 
 Class 0 has 15001 instances, making it the majority class.
+Class 1 has 507 cases, indicating it is much rarer in comparison.
 
-Class 1 has 507 instances, indicating it is much rarer in comparison.
+References
 
-Accuracy: Overall, how often is the classifier correct? This is derived from the sum of true positives and true negatives divided by the total number of cases.
+Scikit-learn Documentation: - scikit-learn.org/.021/documentation.html
+Scikit-learn: -devdocs.io/scikit_learn/
+Scikit-learn - What is scikit learn tutorial - Youtube - Inttelipast
+Scikit-learn tutorial - Youtube - Simplilearn
+Logistic Regression in Python from Scratch [ Youtube - Coding Lane
+ChatGPT
+
+
 
